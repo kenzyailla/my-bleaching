@@ -1,0 +1,144 @@
+ :root {
+            --primary: #3498db;
+            --secondary: #2c3e50;
+            --aloe: #27ae60;
+            --light: #f5f7fa;
+            --dark: #2c3e50;
+            --formula1: #8e44ad;
+            --formula2: #3498db;
+            --formula3: #2ecc71;
+            --formula4: #e67e22;
+            --formula5: #e74c3c;
+            --formula6: #16a085;
+        }
+        *{
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+border: none;
+outline: none;
+   
+        }
+        body{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f3e5f5 0%, #e8f4f8 100%);
+            margin: 0;
+            padding: 20px;
+        }
+        .container{
+          margin: 0 auto;
+          max-width: 1200px;
+           position: relative;
+             z-index: 2;
+        }
+        header{
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+         h1 {
+            color: var(--secondary);
+            margin-bottom: 15px;
+            font-size: 36px;
+        }
+        h2{
+
+          color: var(--primary);
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+  .formulas-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+      .formula-card{
+
+         background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+      }
+      .formula-header {
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+       
+        .formula-1 .formula-header { background: var(--formula1); }
+        .formula-2 .formula-header { background: var(--formula2); }
+        .formula-3 .formula-header { background: var(--formula3); }
+        .formula-4 .formula-header { background: var(--formula4); }
+        .formula-5 .formula-header { background: var(--formula5); }
+        
+        .formula-body {
+            padding: 20px;
+        }
+.ingredeait-list{
+   list-style: none;
+            margin: 15px 0;
+
+}
+   .ingredeait-list li{
+  padding: 8px 0;
+            border-bottom: 1px dashed #f5f8ff;
+            display: flex;
+            justify-content: space-between;
+   } 
+.ingrediant-name{
+  font-weight: 800;
+  color: firebrick;
+}
+.ingrediant-value{
+    color:red;
+            font-weight: bold;
+}
+.warpper{
+  width: 95%;
+  margin: 0 auto;
+ 
+}
+    #search-container{
+margin: 1em 0;
+
+
+    }   
+     #search-container input{
+background-color: transparent;
+width: 40%;
+padding: 1em 0.3em;
+border-bottom: 2px solid #101f29;
+
+    }   
+      #search-container button{
+        padding: 1em 2em;
+        margin-right: 2em;
+        background-color: skyblue;
+        border-radius: 15px;
+      }
+   .button-value
+{
+border: 2px solid  skyblue;
+border-radius: 15px;
+padding: 1em 2em;
+margin: 15px;
+background-color: transparent;
+color: #6759ff;
+font-weight: 600;
+cursor: pointer;
+}    
+.active{
+background-color:#6759ff ;
+color: #ffffff;
+}
+ 
+        
+       
